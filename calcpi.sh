@@ -3,7 +3,7 @@ N=`cat /proc/cpuinfo | grep processor | wc -l`
 
 cat /proc/cpuinfo | grep "model name"
 echo
-echo "Calculating the first 5000 decimals of pi using $N parallel processes"
+echo "Calculating the first 5000 decimals of pi using $N parallel processes."
 TimeBegin=`date +%s.%N`
 
 for ((i=1; i<=$N; i++))
